@@ -23,8 +23,9 @@ def find_valid_calls(planeteer_calls)
   # Return the first valid call found, or return nil if no valid calls are found
   i = 0
  planeteer_calls.map {|element|element == valid_calls[i]
-
-  if planeteer_calls.map {|element|element == valid_calls[i]
+   valid_calls[i]
+   i += 1
+  if planeteer_calls.map {|element|element != valid_calls[i]
     return nil
   end
 end
