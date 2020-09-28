@@ -27,4 +27,5 @@ def find_valid_calls(planeteer_calls)
    i += 1
   if planeteer_calls.map {|element|element != valid_calls[i]
     return nil
+  end
 end
