@@ -24,7 +24,7 @@ def find_valid_calls(planeteer_calls)
   i = 0
  planeteer_calls.inlude? valid_calls[i]
    valid_calls[i]
-   #i += 1
+   i += 1
   if planeteer_calls.map {|element|element != valid_calls[i]}
     return nil
   end
