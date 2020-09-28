@@ -22,7 +22,7 @@ def find_valid_calls(planeteer_calls)
   # Use an Enumerable to check if any elements in the passed in array match the valid calls listed above
   # Return the first valid call found, or return nil if no valid calls are found
   i = 0
- planeteer_calls.map {|element|element == valid_calls[i]}
+ planeteer_calls.inlude? valid_calls[i]
    valid_calls[i]
    #i += 1
   if planeteer_calls.map {|element|element != valid_calls[i]}
