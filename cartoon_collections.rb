@@ -24,5 +24,6 @@ def find_valid_calls(planeteer_calls)
   if planeteer_calls.find {|i| i == valid_calls[i]}
     planeteer_calls[i]
   else planeteer_calls.find {|i| i != valid_calls[i]}
+    nil
   end
 end
